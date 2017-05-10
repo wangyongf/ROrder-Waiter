@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitleLayout">
+        <attr name="tl_leftMode">
+            <enum name="icon" value="0" />
+            <enum name="text" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="tl_rightMode">
+            <enum name="text" value="0" />
+            <enum name="icon" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="tl_leftIcon" format="reference" />
+        <attr name="tl_leftText" format="string" />
+        <attr name="tl_titleText" format="string" />
+        <attr name="tl_rightIcon" format="reference" />
+        <attr name="tl_rightText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="DisplayItemView">
+        <attr name="div_leftMode">
+            <enum name="text" value="0" />
+            <enum name="text_icon" value="1" />
+            <enum name="text_subtext" value="2" />
+            <enum name="none" value="3" />
+        </attr>
+        <attr name="div_rightMode">
+            <enum name="text" value="0" />
+            <enum name="icon" value="1" />
+            <enum name="text_icon" value="2" />
+            <enum name="switch_button" value="3" />
+            <enum name="none" value="4" />
+        </attr>
+        <attr name="div_leftIcon" format="reference" />
+        <attr name="div_leftText" format="string" />
+        <attr name="div_leftSubText" format="string" />
+        <attr name="div_rightText" format="string" />
+        <attr name="div_rightIcon" format="reference" />
+    </declare-styleable>
+
+</resources>

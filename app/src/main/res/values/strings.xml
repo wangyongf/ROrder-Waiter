@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">ROrderWaiter</string>
+    <string name="app_name">美味宝服务员版</string>
+    <string name="goback">返回</string>
+    <string name="feedback">意见反馈</string>
+    <string name="submit">提交</string>
+    <string name="setting">设置</string>
+    <string name="scan">扫一扫</string>
+    <string name="login">登录</string>
+    <string name="register_account">注册账户</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="rules"><![CDATA[《<u>美味宝管理细则</u>》]]></string>
+    <string name="terms"><![CDATA[《<u>美味宝服务条款</u>》]]></string>
+    <string name="about_description">使用美味宝网页版，电脑客户端，手机客户端，强大的多端同步，音乐随身听！请访问：blog.54yongf.com</string>
+    <string name="rating">给软件评分</string>
+    <string name="help_and_feedback">帮助与反馈</string>
+    <string name="tutorial">新手教程</string>
+    <string name="no_new_version">无新版</string>
+    <string name="latest_version">最新版本</string>
+    <string name="current_version">当前版本</string>
+    <string name="my_message">我的消息</string>
+    <string name="skin_theme">主题换肤</string>
+    <string name="big_fish">大鱼海棠</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="alarm_clock">音乐闹钟</string>
+    <string name="share_app">分享美味宝</string>
+    <string name="about">关于</string>
+    <string name="log_out">退出登录</string>
+    <string name="about_app">关于美味宝服务员端</string>
 </resources>

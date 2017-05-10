@@ -32,9 +32,11 @@ public final class Config {
     public static final String CONFIG_ = "config.xml";
     public static final String DEBUG_ = "debug";
     public static final String RESTAURANT_ID_ = "restaurant_id";
+    public static final String WAITER_ID_ = "waiter_id";
     
     public static boolean DEBUG = false;                //app是否处于调试模式
     public static int RESTAURANT_ID = -1;               //restaurant_id
+    public static int WAITER_ID = -1;                           //waiter_id
 
     public static void init(Context context) {
         initConfig(context);
@@ -63,6 +65,9 @@ public final class Config {
                         } else if (parser.getName().equals(RESTAURANT_ID_)) {
                             parser.next();
                             RESTAURANT_ID = Integer.parseInt(parser.getText());
+                        } else if (parser.getName().equals(WAITER_ID_)) {
+                            parser.next();
+                            WAITER_ID = Integer.parseInt(parser.getText());
                         }
                     case XmlPullParser.END_TAG:
                         break;

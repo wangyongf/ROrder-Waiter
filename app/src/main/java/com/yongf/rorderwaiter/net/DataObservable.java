@@ -18,6 +18,9 @@ import com.kymjs.rxvolley.RxVolley;
 import com.kymjs.rxvolley.client.HttpParams;
 import com.yongf.rorderwaiter.app.application.AppEnv;
 import com.yongf.rorderwaiter.model.BaseBean;
+import com.yongf.rorderwaiter.model.order.OrderDetailResultBean;
+import com.yongf.rorderwaiter.model.order.OrderDetailsResultBean;
+import com.yongf.rorderwaiter.model.order.UpdateDishScheduleResultBean;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -44,6 +47,45 @@ public final class DataObservable {
     public static final int TYPE_CACHE_MEMORY = 2;
 
     private DataObservable() {
+    }
+
+    /**
+     * 服务员端获取订单信息
+     *
+     * @param mode
+     * @param waiterId 服务员编号
+     *
+     * @return
+     */
+    public static Observable<OrderDetailsResultBean> orderDetails(int mode, int waiterId) {
+        return buildObservable(mode, UrlCenter.ORDER_DETAILS_PREFIX + waiterId + UrlCenter.ORDER_DETAILS_SUFFIX,
+                RxVolley.Method.GET, null, null, OrderDetailsResultBean.class);
+    }
+
+    /**
+     * 根据OrderDetailId获取相应订单详情
+     *
+     * @param mode
+     * @param orderId
+     *
+     * @return
+     */
+    public static Observable<OrderDetailResultBean> orderDetail(int mode, int orderId) {
+        return buildObservable(mode, UrlCenter.ORDER_DETAIL + orderId, RxVolley.Method.GET,
+                null, null, OrderDetailResultBean.class);
+    }
+
+    /**
+     * 更新上菜进度
+     *
+     * @param mode
+     * @param jsonBody
+     *
+     * @return
+     */
+    public static Observable<UpdateDishScheduleResultBean> updateDishSchedule(int mode, String jsonBody) {
+        return buildObservable(mode, UrlCenter.UPDATE_DISH_SCHEDULE, RxVolley.Method.POST,
+                null, jsonBody, UpdateDishScheduleResultBean.class);
     }
 
     /**

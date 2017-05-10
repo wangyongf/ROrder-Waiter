@@ -42,6 +42,7 @@ dependencies {
     /////// ------------------- application dependencies ------------------- ///////
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:25.3.1'
     //RxAndroid
     compile 'io.reactivex:rxandroid:1.2.1'
     //RxJava
@@ -55,6 +56,10 @@ dependencies {
     //RxVolley
     compile 'com.kymjs.rxvolley:rxvolley:1.1.4'
     compile 'com.kymjs.rxvolley:okhttp3:1.1.4'
+    // beautiful switch buttons
+    compile 'com.kyleduo.switchbutton:library:1.4.4'
+    // Material EditText
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
 
     /////// ------------------- dependencies for test ------------------- ///////
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {

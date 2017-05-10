@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color_white_smoke">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.yongf.rorderwaiter.widget.TitleLayout
+            android:id="@+id/tl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tl_leftMode="icon"
+            app:tl_rightMode="none"
+            app:tl_titleText="@string/about_app" />
+
+        <ImageView
+            android:id="@+id/iv_app_logo"
+            android:layout_width="@dimen/app_size70"
+            android:layout_height="@dimen/app_size70"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/app_size30"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_size30"
+            android:background="@color/app_color_white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_size0.5"
+                android:background="@color/app_color_divider" />
+
+            <com.yongf.rorderwaiter.widget.DisplayItemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:div_leftMode="text"
+                app:div_leftText="@string/current_version"
+                app:div_rightMode="text"
+                app:div_rightText="3.7.5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_size0.5"
+                android:background="@color/app_color_divider" />
+
+            <com.yongf.rorderwaiter.widget.DisplayItemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:div_leftMode="text"
+                app:div_leftText="@string/latest_version"
+                app:div_rightMode="text"
+                app:div_rightText="@string/no_new_version" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_size0.5"
+                android:background="@color/app_color_divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_size10"
+            android:background="@color/app_color_white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_size0.5"
+                android:background="@color/app_color_divider" />
+
+            <com.yongf.rorderwaiter.widget.DisplayItemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:div_leftMode="text"
+                app:div_leftText="@string/tutorial"
+                app:div_rightIcon="@drawable/more"
+                app:div_rightMode="icon" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_size0.5"
+                android:background="@color/app_color_divider" />
+
+            <com.yongf.rorderwaiter.widget.DisplayItemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:div_leftMode="text"
+                app:div_leftText="@string/help_and_feedback"
+                app:div_rightIcon="@drawable/more"
+                app:div_rightMode="icon" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_size0.5"
+                android:background="@color/app_color_divider" />
+
+            <com.yongf.rorderwaiter.widget.DisplayItemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:div_leftMode="text"
+                app:div_leftText="@string/rating"
+                app:div_rightIcon="@drawable/more"
+                app:div_rightMode="icon" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_size0.5"
+                android:background="@color/app_color_divider" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_size15"
+            android:layout_marginRight="@dimen/app_size15"
+            android:layout_marginTop="@dimen/app_size8"
+            android:gravity="center"
+            android:text="@string/about_description"
+            android:textColor="@color/app_color_gray"
+            android:textSize="@dimen/app_txt_size12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/app_size40"
+            android:text="@string/terms"
+            android:textColor="@color/app_color_dark_sea_green"
+            android:textSize="@dimen/app_txt_size14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/app_size10"
+            android:text="@string/rules"
+            android:textColor="@color/app_color_dark_sea_green"
+            android:textSize="@dimen/app_txt_size14" />
+    </LinearLayout>
+</ScrollView>

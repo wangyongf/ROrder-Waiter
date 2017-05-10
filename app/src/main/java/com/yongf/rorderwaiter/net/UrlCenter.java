@@ -16,31 +16,19 @@ public class UrlCenter {
     public static final String LOCALHOST_SITE = "http://localhost/ps/ROrder/public";
     public static final String EMULATOR_SITE = "http://10.0.2.2/ps/ROrder/public";
 
-    //登录注册相关
-    public static final String LOGIN_URL = "/Login/login.php";
-    //免注册登录
-    ///api/v1/user/register_free/
-    public static final String REGISTER_FREE = "/api/v1/user/register_free/";
+    /////// ------------------- restaurant ------------------- ///////
 
-    /////// ------------------- Restaurant ------------------- ///////
-
-    //商品(菜单)
-    //api/v1/restaurant/{id}/cookbook
-    public static final String COOK_BOOK_PREFIX = "/api/v1/restaurant/";
-    public static final String COOK_BOOK_SUFFIX = "/cookbook";
-
-    /////// ------------------- Order ------------------- ///////
-
-    //新建订单接口
-    //api/v1/order/order
-    public static final String NEW_ORDER = "/api/v1/order/order";
-    //根据订单号获取订单详情
-    ///api/v1/order/detail/
-    public static final String ORDER_DETAILS = "/api/v1/order/detail/";
-    //根据OrderDetailId获取相应的订单详情
+    //服务员端获取订单信息
+    ///api/v1/waiter/{id}/order
+    public static final String ORDER_DETAILS_PREFIX = "/api/v1/waiter/";
+    public static final String ORDER_DETAILS_SUFFIX = "/order";
+    //根据OrderDetailId获取相应订单详情
     ///api/v1/order_detail/get/
     public static final String ORDER_DETAIL = "/api/v1/order_detail/get/";
-    //顾客端更新订单接口
-    ///api/v1/order/update
-    public static final String UPDATE_ORDER_DETAIL = "/api/v1/order/update";
+
+    /////// ------------------- order ------------------- ///////
+
+    //更新上菜进度
+    ///api/v1/dish_schedule/update
+    public static final String UPDATE_DISH_SCHEDULE = "/api/v1/dish_schedule/update";
 }
